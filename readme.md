@@ -30,38 +30,31 @@ This is a widget for the [Appcelerator] [Alloy] MVC framework which allows easy 
 * Add the widget as the last item in the view container you want to make it appear.
 
 ```xml
-~<Alloy>~
-'' <Window>
-''     <Widget id="tabGroup" src="com.jasonkneen.fileDownload"/>
-'' </Window>
-~</Alloy>~
+<Alloy>
+ <Window>
+     <Widget id="tabGroup" src="com.jasonkneen.fileDownload"/>
+ </Window>
+</Alloy>
 ```
 
 * Configure the widget from the controller .js file
 
-\`\`\`js
+```javascript
 $.progress.url = "http://download/file/image.png";
 $.progress.fileName = "temp.bin";
 $.progress.start();
-});
-
-
-\`\`\`
+```
 
 ## License
 
-~~ <pre>
-~~ Copyright 2013 Jason Kneen
-~~ 
-~~ Licensed under the Apache License, Version 2.0 (the "License");
-~~ you may not use this file except in compliance with the License.
-~~ You may obtain a copy of the License at
-~~ 
-~~    http://www.apache.org/licenses/LICENSE-2.0
-~~ 
-~~ Unless required by applicable law or agreed to in writing, software
-~~ distributed under the License is distributed on an "AS IS" BASIS,
-~~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-~~ See the License for the specific language governing permissions and
-~~ limitations under the License.
-~~ </pre>
+Copyright 2013 Jason Kneen
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
